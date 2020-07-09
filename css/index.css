@@ -1,0 +1,273 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+header{
+    height: 64px;
+    background: linear-gradient(30deg, #03001e, #7303c0, #ec38bc);
+}
+
+.xlw-nav .navbar{
+    height: 64px;
+    margin-bottom: 0px;
+    border: none;
+}
+
+.xlw-nav .navbar-header{
+    height: 64px;
+}
+
+.xlw-nav .navbar-brand>img{
+    width: 46px;
+    height: 46px;
+    display: inline-block;
+    float: left;
+    margin-top: 9px;
+}
+
+.xlw-nav .navbar-brand>p{
+    height: 64px;
+    line-height: 64px;
+    color: #fff;
+    display: inline-block;
+    float: left;
+    font-size: 34px;
+    margin: 0px 0px 0px 10px;
+}
+
+.xlw-nav .navbar-brand{
+    padding: 0px;
+    width: 200px;
+    height: 64px;
+}
+
+.xlw-nav .navbar-toggle .icon-bar{
+    height: 4px;
+    background-color: #fff;
+}
+
+.navTop p{
+    width: 180px;
+    height: 64px;
+    float: left;
+    line-height: 64px;
+    text-align: center;
+    font-size: 34px;
+    color: #fff;
+    margin: 0;
+    border: none;
+}
+
+#menu{
+    float: left !important;
+}
+
+.navRight>li>a{
+    height: 64px;
+    color: #fff !important;
+    line-height: 64px;
+    padding: 0px 15px;
+}
+
+.navRight>li:hover a{
+    background-color: rgba(0,0,0,0.2) !important;
+}
+
+.navRight>li:nth-of-type(7):hover a{
+    background-color: rgba(0,0,0,0) !important;
+}
+
+.navBtn{
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    color: #fff;
+    border: none;
+    background-color: #000;
+    border-radius: 50%;
+    margin: 9px 0px 0px;
+    padding: 0px;
+}
+
+.ddmenu{
+    border: none;
+    background: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    left: 0 !important;
+}
+
+.ddmenu>li{
+    width: 40px;
+    height: 40px;
+    margin-top: 15px;
+    background-color: #00b3ee;
+    border-radius: 50%;
+}
+
+.ddmenu>li:hover a{
+    background-color: transparent;
+}
+
+.ddmenu>li>a{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.main{
+    background: linear-gradient(30deg, #03001e, #7303c0, #ec38bc);
+}
+
+.main-left{
+    margin-right: 100px;
+    margin-top: 190px;
+    text-align: center;
+}
+
+.main-title{
+    color: #fff;
+    font-size: 45px;
+}
+
+.main-con{
+    color: #fff;
+    font-size: 14px;
+}
+
+.main-download{
+    text-decoration: none;
+    display: block;
+    width: 380px;
+    height: 52px;
+    background-color: #2ECC71;
+    line-height: 52px;
+    color: #000;
+    border-radius: 50px;
+    font-size: 24px;
+    margin: 0 auto;
+    cursor:pointer;
+}
+
+.main-download .glyphicon-download-alt{
+    margin-right: 10px;
+}
+
+.main-download:hover{
+    text-decoration: none;
+    color: #000;
+    transition: 0.4s box-shadow;
+    box-shadow: 0px 8px 8px 5px rgba(0,0,0,0.3);
+}
+
+.main-lunbo{
+    margin-top: 80px;
+    height: 560px;
+}
+
+.main-lunbo .carousel{
+    width: 255px;
+    height: 560px;
+    margin: 0px auto;
+}
+
+.main-lunbo .carousel-indicators {
+    bottom: 10px;
+}
+
+.main-lunbo .item>img{
+    width: 100%;
+    height: 510px;
+}
+
+.main-lunbo .carousel-indicators li{
+    width: 22px;
+    height: 2px;
+    border: none;
+    margin: 0px 5px;
+    background-color: #fff;
+}
+
+.main-lunbo ol>.active{
+    background-color: #2ECC71;
+}
+
+.mobile-tip{
+    background: #000;
+}
+
+.tip-box{
+    text-align: center;
+}
+
+.tip-img{
+    display: inline-block;
+    width: 126px;
+    height: 126px;
+    border-radius: 50%;
+    background: linear-gradient(30deg, #03001e, #7303c0, #ec38bc);
+    color: #fff;
+    margin-top: 120px;
+    font-size: 46px;
+    text-align: center;
+    line-height: 126px;
+}
+
+.tip-con{
+    color: #21cc71;
+    margin-top: 72px;
+    font-size: 28px;
+}
+
+.tip-txt{
+    color: #fff;
+    font-size: 14px;
+    margin: 45px 0px 143px;
+}
+
+@media (min-width: 766px) and (max-width: 1199px){
+    .navRight li>a{
+        font-size: 13px;
+        padding: 0 5px;
+    }
+
+    .main-left{
+        margin-right: 0px;
+    }
+
+    .navRight>li:nth-of-type(7){
+        display: none !important;
+    }
+}
+
+@media (max-width: 767px){
+    .navRight>li:nth-of-type(7){
+        display: none !important;
+    }
+
+    .xlw-nav .navbar-collapse{
+        border: none;
+        background: linear-gradient(30deg, #03001e, #7303c0, #ec38bc);
+        max-height: 400px;
+        margin-right: -30px;
+        margin-left: -30px;
+        overflow: visible hidden;
+    }
+
+    .main-download{
+        text-decoration: none;
+        display: block;
+        width: 240px;
+        height: 40px;
+        background-color: #2ECC71;
+        line-height: 40px;
+        color: #000;
+        border-radius: 50px;
+        font-size: 14px;
+        margin: 0 auto;
+        cursor:pointer;
+    }
+}

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>bootsrap案例</title>
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <script src="./jquery/jquery.min.js"></script>
+    <script src="./bootstrap/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <header class="xlw-nav navbar-fixed-top">
+        <nav class="navbar container">
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <div class="logoBox">
+                        <a class="navbar-brand" href="#"><img alt="Brand" src="./images/logo.png"><p>Mr. Habit</p></a>
+                    </div>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right navRight">
+                        <li><a href="#">HOME</a></li>
+                        <li><a href="#">FEATURES</a></li>
+                        <li><a href="#">SCREENSHOTS</a></li>
+                        <li><a href="#">DOWNLOAD</a></li>
+                        <li><a href="#">SUBSCRIBE</a></li>
+                        <li><a href="#">CONTACTS</a></li>
+                        <li class="dropdown">
+                            <button type="button" class="dropdown-toggle navBtn glyphicon glyphicon-menu-hamburger" aria-hidden="true"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            </button>
+                            <ul class="dropdown-menu ddmenu">
+                                <li><a href="#"></a></li>
+                                <li><a href="#"></a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main">
+        <div class="container">
+            <div class="row">
+                <div class="main-left col-lg-6 col-xs-12">
+                    <h1 class="main-title">Mr. Habit - Habit Tracker & Schedule</h1>
+                    <p class="main-con">Innovative assistant for forming habits at a time convenient for you. Many
+                        functions and flexibility of settings will satisfy any of your requirements, and a new
+                        system of analysis and motivation (Adaptation and Streak ("Don't break the chain"))
+                        will help to track progress in achieving your goals</p>
+                    <a class="main-download"><span class="glyphicon glyphicon-download-alt"></span>Download for Free</a>
+                </div>
+<!--                轮播-->
+                <div class="main-lunbo col-lg-4 col-xs-12">
+                    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                        <!-- Indicators -->
+                        <ol class="carousel-indicators">
+                            <li data-target="#carousel-example-generic" data-slide-to="0"></li>
+                            <li data-target="#carousel-example-generic" data-slide-to="1" class="active"></li>
+                            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                        </ol>
+
+                        <!-- Wrapper for slides -->
+                        <div class="carousel-inner" role="listbox">
+                            <div class="item">
+                                <img src="./images/lunbo1.png" alt="">
+                            </div>
+                            <div class="item active">
+                                <img src="./images/lunbo2.png" alt="">
+                            </div>
+                            <div class="item">
+                                <img src="./images/lunbo3.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <section>
+        <div class="mobile-tip">
+            <div class="container">
+                <div class="row">
+                    <div class="tip-box col-lg-4">
+                        <span class="tip-img glyphicon glyphicon-time" aria-hidden="true"></span>
+                        <p class="tip-con">Adaptability</p>
+                        <p class="tip-txt">Set up time intervals and the app will adapt to them, offering to do habits that are relevant at the current moment</p>
+                    </div>
+
+                    <div class="tip-box col-lg-4">
+                        <span class="tip-img glyphicon glyphicon-star" aria-hidden="true"></span>
+                        <p class="tip-con">Motivation</p>
+                        <p class="tip-txt">2 motivation techniques: Adaptation and Streak ("Don't break the chain")</p>
+                    </div>
+
+                    <div class="tip-box col-lg-4">
+                        <span class="tip-img glyphicon glyphicon-object-align-bottom" aria-hidden="true"></span>
+                        <p class="tip-con">Analysis</p>
+                        <p class="tip-txt">Weekly reports and analysis, detailed statistics for habits</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
