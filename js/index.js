@@ -83,9 +83,29 @@ $('.btn-r').click(function () {
     },3500);
 })
 
-
-
-
+// 滚动监听
+$('.navRight li').click(function () {
+    switch ($(this).index()) {
+        case 0 :
+            $('html,body').animate({'scrollTop':'0px'});
+            break;
+        case 1 :
+            $('html,body').animate({'scrollTop':$('.features').offset().top});
+            break;
+        case 2 :
+            $('html,body').animate({'scrollTop':$('.screenshot').offset().top});
+            break;
+        case 3 :
+            $('html,body').animate({'scrollTop':$('.download').offset().top});
+            break;
+        case 4 :
+            $('html,body').animate({'scrollTop':$('.newsletter').offset().top});
+            break;
+        case 5 :
+            $('html,body').animate({'scrollTop':$('.contacts').offset().top});
+            break;
+    }
+});
 
 
 

@@ -15,8 +15,21 @@ header{
     border: none;
 }
 
+.xlw-nav .navbar-default{
+    background-color: transparent;
+}
+
 .xlw-nav .navbar-header{
     height: 64px;
+}
+
+.xlw-nav .navbar-header .navbar-toggle{
+    border: none;
+    background-color: transparent;
+}
+
+.xlw-nav .navbar-header .navbar-toggle:focus,.xlw-nav .navbar-header .navbar-toggle:hover {
+    background-color: transparent;
 }
 
 .xlw-nav .navbar-brand>img{
@@ -64,14 +77,15 @@ header{
     float: left !important;
 }
 
-.navRight>li>a{
+.navRight>li{
     height: 64px;
     color: #fff !important;
     line-height: 64px;
     padding: 0px 15px;
+    cursor: pointer;
 }
 
-.navRight>li:hover a{
+.navRight>li:hover{
     background-color: rgba(0,0,0,0.2) !important;
 }
 
@@ -180,7 +194,7 @@ header{
 
 .main-lunbo .item>img{
     width: 100%;
-    height: 510px;
+    height: 100%;
 }
 
 .main-lunbo .carousel-indicators li{
@@ -230,6 +244,7 @@ header{
 
 .features{
     background: linear-gradient(30deg, #03001e, #7303c0, #ec38bc);
+    padding-bottom: 50px;
 }
 
 .features .list-group-item{
@@ -340,6 +355,222 @@ header{
     z-index: 1000;
 }
 
+.screenshot{
+    background-color: #111;
+    padding-bottom: 50px;
+}
+
+.screenshot-title{
+    height: 98px;
+    text-align: center;
+    line-height: 98px;
+    color: #fff;
+    font-size: 32px;
+    margin: 33px 0px;
+    position: relative;
+}
+
+.screenshot-title:after{
+    content: "";
+    width: 136px;
+    height: 26px;
+    background: url("../images/line-break-white.svg") no-repeat;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    bottom: 0px;
+}
+
+#screenshot-carousel .carousel-inner{
+    width: 300px;
+    height: 600px;
+    margin: 0 auto;
+}
+
+#screenshot-carousel .my-item{
+    width: 300px;
+    height: 600px;
+}
+
+
+.download{
+    background: linear-gradient(30deg, #03001e, #7303c0, #ec38bc);
+    padding-bottom: 50px;
+    position: relative;
+}
+
+.download-title{
+    height: 98px;
+    text-align: center;
+    line-height: 98px;
+    color: #fff;
+    font-size: 32px;
+    margin: 33px 0px;
+    position: relative;
+}
+
+.download-title:after{
+    content: "";
+    width: 136px;
+    height: 26px;
+    background: url("../images/line-break-white.svg") no-repeat;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    bottom: 0px;
+}
+
+.btn-free{
+    /*width: 240px;*/
+    height: 84px;
+    background-color: #212121;
+    border: 1px solid #fff;
+    border-radius: 50px;
+    color: #fff;
+    text-align: center;
+    margin: 10px 15px;
+}
+
+.btn-pro{
+    /*width: 240px;*/
+    height: 84px;
+    background-color: #2e7d32;
+    border: 1px solid #fff;
+    border-radius: 50px;
+    color: #fff;
+    text-align: center;
+    margin: 10px 15px;
+}
+
+.btn-pro:hover,.btn-free:hover{
+    color: #fff;
+}
+
+.btn-free span,.btn-pro span{
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    font-size: 36px;
+    /*background-color: #fff;*/
+}
+
+.btn-free p,.btn-pro p{
+    display: inline-block;
+    text-align: left;
+    margin-left: 5px;
+    padding-top: 15px;
+}
+
+.btn-free i,.btn-free b,.btn-pro i,.btn-pro b{
+    display: block;
+}
+
+.btn-free b,.btn-pro b{
+    font-size: 18px;
+}
+
+.download-img{
+    width: 360px;
+    height: 300px;
+    margin: 0 0 0 50px;
+    overflow: hidden;
+    position: absolute;
+    right: 200px;
+    top: 17px
+}
+
+.download-img img{
+    width: 250px;
+    height: 500px;
+    transform: rotate(30deg);
+    margin-top: 50px;
+}
+
+.newsletter{
+    background-color: #2b2b2b;
+    padding: 100px 0;
+}
+
+.newsletter-title{
+    /*text-align: center;*/
+    color: #fff;
+    font-size: 30px;
+    line-height: 60px;
+}
+
+.newsletter .form-control{
+    height: 60px;
+    border-radius: 50px;
+    border-right: none;
+}
+
+.newsletter .btn-go{
+    width: 100px;
+    height: 60px;
+    color: #fff;
+    font-size: 26px;
+    border-radius: 50px;
+    border-left: none;
+    background: linear-gradient(30deg, #03001e, #7303c0, #ec38bc);
+    border: none;
+}
+
+.btn-go:hover,.btn-go:focus,.btn-go:active,.btn-go:visited {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+.contacts{
+    background-color: #32363b;
+    padding: 50px 0;
+}
+
+.contacts .container{
+    background-color: #fff;
+}
+
+.contacts-title{
+    height: 98px;
+    text-align: center;
+    line-height: 98px;
+    color: #03001e;
+    font-size: 32px;
+    margin-top: 33px;
+    position: relative;
+}
+
+.contacts-title:after{
+    content: "";
+    width: 136px;
+    height: 26px;
+    background: url("../images/line-break-18.svg") no-repeat;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    bottom: 0px;
+}
+
+.sendform{
+    margin: 10px auto;
+    float: none;
+    padding: 0;
+}
+
+.sendform .btn-send{
+    float: none;
+    display: block;
+    margin: 0 auto;
+    color: #fff;
+    background: linear-gradient(30deg, #03001e, #7303c0, #ec38bc);
+    border: none;
+    height: 34px;
+    border-radius: 50px;
+}
+
+.sendform .btn-send:hover,.sendform .btn-send:focus,.sendform .btn-send:active,.sendform .btn-send:visited {
+    outline: none !important;
+    box-shadow: none !important;
+}
 
 @media (min-width: 766px) and (max-width: 1199px){
     .navRight li>a{
@@ -379,7 +610,18 @@ header{
         font-size: 14px;
         margin: 20px 0px 15px;
     }
+
+    .download-btn{
+        margin: 0 auto;
+        float: none;
+        padding-left: 43px;
+    }
+
+    .download-img{
+        display: none;
+    }
 }
+
 
 @media (max-width: 767px){
     .navRight>li:nth-of-type(7){
@@ -432,5 +674,15 @@ header{
         color: #fff;
         font-size: 14px;
         margin: 20px 0px 15px;
+    }
+
+    .download-btn{
+        margin: 0 auto;
+        float: none;
+        padding-left: 43px;
+    }
+
+    .download-img{
+        display: none;
     }
 }
