@@ -33,11 +33,13 @@ function go() {
 
 go();
 
-$('.btn-f').click(function () {
+$('.btn-l').click(function () {
     clearInterval(timer);
     for(var j=0;j<6;j++){
         $('.change-box li').eq(j).css({'z-index':10-j});
     }
+    $('.btn-r').removeClass('addfbtn');
+    $(this).addClass('addfbtn');
     $(this).siblings().removeClass('addfbtn');
     if($(this).index()==0){
         $('.change-box li').eq(0).stop().animate({'top':'0px'},1000);
@@ -59,10 +61,11 @@ $('.btn-f').click(function () {
 
 $('.btn-r').click(function () {
     clearInterval(timer);
-    $('.btn-l').eq(0).removeClass('addfbtn');
     for(var j=0;j<6;j++){
         $('.change-box li').eq(j).css({'z-index':10-j});
     }
+    $('.btn-l').removeClass('addfbtn');
+    $(this).addClass('addfbtn');
     $(this).siblings().removeClass('addfbtn');
     for (var h=1;h<=$(this).index()+3;h++){
         if($(this).index()==2){
