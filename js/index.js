@@ -85,6 +85,7 @@ $('.btn-r').click(function () {
 
 // 滚动监听
 $('.navRight li').click(function () {
+    $('.navbar-toggle').click()
     switch ($(this).index()) {
         case 0 :
             $('html,body').animate({'scrollTop':'0px'});

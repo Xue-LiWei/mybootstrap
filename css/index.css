@@ -420,29 +420,31 @@ header{
     bottom: 0px;
 }
 
-.btn-free{
-    /*width: 240px;*/
+.btn-free>a{
+    width: 240px;
     height: 84px;
     background-color: #212121;
     border: 1px solid #fff;
     border-radius: 50px;
     color: #fff;
     text-align: center;
-    margin: 10px 15px;
+    display: block;
+    margin: 5px auto;
 }
 
-.btn-pro{
-    /*width: 240px;*/
+.btn-pro>a{
+    width: 240px;
     height: 84px;
     background-color: #2e7d32;
     border: 1px solid #fff;
     border-radius: 50px;
     color: #fff;
     text-align: center;
-    margin: 10px 15px;
+    display: block;
+    margin: 5px auto;
 }
 
-.btn-pro:hover,.btn-free:hover{
+.btn-pro>a:hover,.btn-free>a:hover{
     color: #fff;
 }
 
@@ -476,7 +478,7 @@ header{
     overflow: hidden;
     position: absolute;
     right: 200px;
-    top: 17px
+    top: 8px
 }
 
 .download-img img{
@@ -614,7 +616,6 @@ header{
     .download-btn{
         margin: 0 auto;
         float: none;
-        padding-left: 43px;
     }
 
     .download-img{
@@ -679,7 +680,6 @@ header{
     .download-btn{
         margin: 0 auto;
         float: none;
-        padding-left: 43px;
     }
 
     .download-img{
