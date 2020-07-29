@@ -111,7 +111,7 @@ header{
     background: none;
     -webkit-box-shadow: none;
     box-shadow: none;
-    left: 0 !important;
+    left: 15px !important;
 }
 
 .ddmenu>li{
@@ -575,7 +575,7 @@ header{
 }
 
 @media (min-width: 766px) and (max-width: 1199px){
-    .navRight li>a{
+    .navRight li{
         font-size: 13px;
         padding: 0 5px;
     }
